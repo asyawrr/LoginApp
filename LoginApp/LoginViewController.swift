@@ -12,27 +12,18 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var usernameTF: UITextField!
     
-    
     @IBOutlet var logInButton: UIButton!
     
     @IBOutlet var forgotNameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
-    
-    var usernameValue: String!
-    var passwordValue: String!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let welcomeVC = segue.destination as? WelcomeViewController {
             welcomeVC.usernameValue = usernameTF.text
         }
-
     }
 
+    // MARK: IB Actions
     @IBAction func forgotPassButtonPressed() {
         showAlertHelp(with: "Ooops!", and: "Your password is \"Password\"")
     }
@@ -53,13 +44,12 @@ class LoginViewController: UIViewController {
                       for: passwordTF)
             return
         }
-        
-        }
+    }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
         guard segue.source is WelcomeViewController else { return }
-        usernameValue = ""
-        passwordValue = ""
+        usernameTF.text = ""
+        passwordTF.text = ""
     }
 }
 

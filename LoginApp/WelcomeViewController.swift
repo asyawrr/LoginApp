@@ -20,10 +20,10 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         gradientBackground()
+        
         welcomeLabel.text = "Welcome, \(usernameValue ?? "0")"
         
     }
-    
     
     @IBAction func logOutButtonPressed() {
         dismiss(animated: true)
