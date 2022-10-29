@@ -104,14 +104,14 @@
                                     <action selector="logOutButtonPressed" destination="8vG-Nj-IDh" eventType="touchUpInside" id="cDa-Q9-H7w"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF9-iH-ALQ">
-                                <rect key="frame" x="140" y="229" width="150" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="CF9-iH-ALQ">
+                                <rect key="frame" x="59" y="229" width="315" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IyC-GN-Nw1">
-                                <rect key="frame" x="192" y="289" width="46" height="49"/>
+                                <rect key="frame" x="192" y="305" width="46" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,11 +122,11 @@
                         <constraints>
                             <constraint firstItem="2g4-RZ-6MQ" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="khc-ps-b54" secondAttribute="trailing" constant="160" id="4B3-pZ-MmC"/>
                             <constraint firstItem="CF9-iH-ALQ" firstAttribute="top" secondItem="2g4-RZ-6MQ" secondAttribute="top" constant="170" id="77G-aS-FHl"/>
-                            <constraint firstItem="CF9-iH-ALQ" firstAttribute="leading" secondItem="2g4-RZ-6MQ" secondAttribute="leading" constant="140" id="7Fm-SQ-GZu"/>
                             <constraint firstItem="IyC-GN-Nw1" firstAttribute="centerX" secondItem="2g4-RZ-6MQ" secondAttribute="centerX" id="H3p-zf-75l"/>
+                            <constraint firstItem="2g4-RZ-6MQ" firstAttribute="trailing" secondItem="CF9-iH-ALQ" secondAttribute="trailing" constant="56" id="Iut-F4-oJn"/>
                             <constraint firstItem="IyC-GN-Nw1" firstAttribute="top" secondItem="CF9-iH-ALQ" secondAttribute="bottom" constant="28" id="VcT-yS-5Z3"/>
+                            <constraint firstItem="CF9-iH-ALQ" firstAttribute="leading" secondItem="2g4-RZ-6MQ" secondAttribute="leading" constant="59" id="ekG-zA-JMQ"/>
                             <constraint firstItem="khc-ps-b54" firstAttribute="leading" relation="lessThanOrEqual" secondItem="2g4-RZ-6MQ" secondAttribute="leading" constant="160" id="fMp-9H-Ohm"/>
-                            <constraint firstItem="2g4-RZ-6MQ" firstAttribute="trailing" secondItem="CF9-iH-ALQ" secondAttribute="trailing" constant="140" id="mWh-f6-Fmz"/>
                             <constraint firstItem="2g4-RZ-6MQ" firstAttribute="bottom" secondItem="khc-ps-b54" secondAttribute="bottom" constant="120" id="p9a-Pq-TJA"/>
                             <constraint firstItem="khc-ps-b54" firstAttribute="centerX" secondItem="2g4-RZ-6MQ" secondAttribute="centerX" id="rxB-qN-fVY"/>
                         </constraints>
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KnD-35-4xq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639.1304347826087" y="-48.097826086956523"/>
+            <point key="canvasLocation" x="1638.1395348837209" y="-48.283261802575112"/>
         </scene>
     </scenes>
     <resources>

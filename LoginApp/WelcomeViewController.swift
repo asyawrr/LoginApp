@@ -11,20 +11,24 @@ class WelcomeViewController: UIViewController {
 
     
     @IBOutlet var welcomeLabel: UILabel!
-    var usernameValue: String!
 
     @IBOutlet var logOutButton: UIButton!
+    
+    var usernameValue: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         gradientBackground()
-
+        welcomeLabel.text = "Welcome, \(usernameValue ?? "0")"
+        
     }
     
     
     @IBAction func logOutButtonPressed() {
         dismiss(animated: true)
     }
+    
     
     // MARK: private functions
     
