@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,72 +13,73 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-aA-nE1">
-                                <rect key="frame" x="241" y="401" width="109" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Forgot Password?"/>
-                                <connections>
-                                    <action selector="forgotPassButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cB-TX-bq1"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="6ob-9e-tgK">
-                                <rect key="frame" x="40" y="217" width="310" height="93"/>
+                                <rect key="frame" x="40" y="217" width="348" height="93"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9Ms-At-Uzc">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e4a-lD-cT4">
-                                        <rect key="frame" x="0.0" y="59" width="310" height="34"/>
+                                        <rect key="frame" x="0.0" y="59" width="348" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cac-7s-EW8">
-                                <rect key="frame" x="40" y="401" width="118" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Forgot User Name?"/>
-                                <connections>
-                                    <action selector="forgotNameButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hld-tj-e0d"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aMV-sS-WJC">
+                                <rect key="frame" x="40" y="401" width="348" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cac-7s-EW8">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Forgot User Name?"/>
+                                        <connections>
+                                            <action selector="forgotNameButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8l-Dy-5L8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-aA-nE1">
+                                        <rect key="frame" x="239" y="0.0" width="109" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Forgot Password?"/>
+                                        <connections>
+                                            <action selector="forgotPassButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cB-TX-bq1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqH-Q1-Y0x">
-                                <rect key="frame" x="137" y="333" width="116" height="36"/>
+                                <rect key="frame" x="137" y="333" width="154" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="8c6-0I-p5z"/>
-                                    <segue destination="8vG-Nj-IDh" kind="presentation" id="EPE-aD-xh3"/>
+                                    <segue destination="8vG-Nj-IDh" kind="presentation" identifier="openWelcomeVC" modalPresentationStyle="fullScreen" id="EPE-aD-xh3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h6k-aA-nE1" secondAttribute="trailing" constant="40" id="4hR-u5-R8u"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ob-9e-tgK" secondAttribute="trailing" constant="40" id="7Ky-8k-ids"/>
-                            <constraint firstItem="h6k-aA-nE1" firstAttribute="top" secondItem="e4a-lD-cT4" secondAttribute="bottom" constant="91" id="8Bw-g1-OK2"/>
                             <constraint firstItem="pqH-Q1-Y0x" firstAttribute="centerX" secondItem="6ob-9e-tgK" secondAttribute="centerX" id="OGi-9V-fN8"/>
-                            <constraint firstItem="h6k-aA-nE1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cac-7s-EW8" secondAttribute="trailing" constant="8" symbolic="YES" id="Qem-7G-gDU"/>
+                            <constraint firstItem="aMV-sS-WJC" firstAttribute="top" secondItem="pqH-Q1-Y0x" secondAttribute="bottom" constant="32" id="QgK-7n-nhI"/>
                             <constraint firstItem="pqH-Q1-Y0x" firstAttribute="top" secondItem="6ob-9e-tgK" secondAttribute="bottom" constant="23" id="Rgs-dA-goB"/>
                             <constraint firstItem="6ob-9e-tgK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="SJ5-4J-Zlh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aMV-sS-WJC" secondAttribute="trailing" constant="40" id="YFc-fw-vNI"/>
                             <constraint firstItem="6ob-9e-tgK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="c6b-yC-jxl"/>
-                            <constraint firstItem="Cac-7s-EW8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="iAy-pl-f4g"/>
+                            <constraint firstItem="aMV-sS-WJC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ebe-mi-6v7"/>
                             <constraint firstItem="pqH-Q1-Y0x" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="pDK-IZ-iEu"/>
-                            <constraint firstItem="Cac-7s-EW8" firstAttribute="top" secondItem="e4a-lD-cT4" secondAttribute="bottom" constant="91" id="rSS-tz-PRL"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="forgotNameButton" destination="Cac-7s-EW8" id="n17-aO-nJq"/>
-                        <outlet property="forgotPasswordButton" destination="h6k-aA-nE1" id="VJA-xT-dGG"/>
                         <outlet property="logInButton" destination="pqH-Q1-Y0x" id="pYz-Mu-iVI"/>
                         <outlet property="passwordTF" destination="e4a-lD-cT4" id="JaQ-EG-vnc"/>
                         <outlet property="usernameTF" destination="9Ms-At-Uzc" id="ZeV-M1-nxg"/>
@@ -93,11 +94,11 @@
             <objects>
                 <viewController id="8vG-Nj-IDh" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hzb-eZ-xz3">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khc-ps-b54">
-                                <rect key="frame" x="152.66666666666666" y="632.66666666666663" width="85" height="34.333333333333371"/>
+                                <rect key="frame" x="160" y="737.66666666666663" width="108" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
                                 <connections>
@@ -106,13 +107,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="CF9-iH-ALQ">
-                                <rect key="frame" x="59" y="217" width="275" height="48"/>
+                                <rect key="frame" x="59" y="217" width="313" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IyC-GN-Nw1">
-                                <rect key="frame" x="172" y="293" width="46" height="49"/>
+                                <rect key="frame" x="191" y="293" width="46" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

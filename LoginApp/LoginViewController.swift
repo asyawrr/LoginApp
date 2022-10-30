@@ -7,49 +7,42 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+final class LoginViewController: UIViewController {
+    
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var usernameTF: UITextField!
+     
+    private let user = "User"
+    private let password = "Password"
     
-    @IBOutlet var logInButton: UIButton!
+    // MARK: override functions
     
-    @IBOutlet var forgotNameButton: UIButton!
-    @IBOutlet var forgotPasswordButton: UIButton!
-        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let welcomeVC = segue.destination as? WelcomeViewController {
-            welcomeVC.usernameValue = usernameTF.text
-        }
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+            welcomeVC.usernameValue = user
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        self.view.endEditing(true)
-        
-    }
-
-    // MARK: IB Actions
-    @IBAction func forgotPassButtonPressed() {
-        showAlertHelp(with: "Ooops!", and: "Your password is \"Password\"")
-    }
-    @IBAction func forgotNameButtonPressed() {
-        showAlertHelp(with: "Ooops!", and: "Your name is \"User\"")
+        view.endEditing(true)
     }
     
+    // MARK: IB Actions
+    @IBAction func forgotButtonPressed(_ sender: UIButton) {
+        sender.tag == 0 ?
+        showAlert(with: "Ooops!", and: "Your password is \(password)") :
+        showAlert(with: "Ooops!", and: "Your name is \(user)")
+    }
+    
+    
     @IBAction func logInButtonPressed() {
-        guard let inputName = usernameTF.text, inputName == "User" else {
+        guard usernameTF.text == user, passwordTF.text == password else {
             showAlert(with: "Invalid login or password",
                       and: "Please, enter correct login or password",
                       for: passwordTF)
             return
         }
-        guard let inputPassword = passwordTF.text, inputPassword == "Password" else {
-            showAlert(with: "Invalid login or password",
-                      and: "Please, enter correct login or password",
-                      for: passwordTF)
-            return
-        }
+        performSegue(withIdentifier: "openWelcomeVC", sender: nil)
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
@@ -62,21 +55,12 @@ class LoginViewController: UIViewController {
 
 // MARK: extensions
 extension LoginViewController {
-    private func showAlert(with title: String, and massage: String, for textField: UITextField) {
+    private func showAlert(with title: String, and massage: String, for textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: massage, preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            textField.text = ""
+            textField?.text = ""
         }
-        
-        alert.addAction(okAction)
-        present(alert, animated: true)
-    }
-    
-    private func showAlertHelp(with title: String, and massage: String) {
-        let alert = UIAlertController(title: title, message: massage, preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: .default)
         
         alert.addAction(okAction)
         present(alert, animated: true)
