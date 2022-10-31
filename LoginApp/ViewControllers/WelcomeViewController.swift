@@ -9,17 +9,16 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
-    
     @IBOutlet var welcomeLabel: UILabel!
         
-    var usernameValue: String!
+    private let user = User.getInformation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         gradientBackground()
         
-        welcomeLabel.text = "Welcome, \(usernameValue ?? "0")"
+        welcomeLabel.text = "Welcome, \(user.userName)"
         
     }
     

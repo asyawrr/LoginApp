@@ -8,32 +8,58 @@
 import Foundation
 
 struct User {
-    let name: String
+    let userName: String
     let password: String
-    let information: [Information]
-}
-
-struct Information {
-    let title: String
-    let type: Info
-}
-
-enum Info: String {
-    case hobby = "Hobby"
-    case pets = "Pets"
-    case facts = "Funny Facts"
+    let person: Person
     
-    var definition; String{
-        switch self{
-        case .hobby:
-            "1"
-        case .pets:
-            "2"
-        case .facts:
-            "3"
-        }
-        
+    static func getInformation() -> User {
+        User(
+            userName: "User",
+            password: "Password",
+            person: Person.getPerson()
+        )
+    }
+    
+}
+
+struct Person {
+    let name: String
+    let surname: String
+    let profession: String
+    let course: String
+    let personPhoto: String
+    
+    static func getPerson() -> Person {
+        Person(
+            name: "Ася",
+            surname: "Шерстнюк",
+            profession: "junior iOS разработчик",
+            course: "2 блок swiftbook",
+            personPhoto: "person")
     }
 }
+
+struct Hobby {
+    let photo: String
+    let hobbyText: String
+    
+    static func getHobby() -> Hobby {
+        Hobby(photo: "hobby", hobbyText: "hobby")
+    }
+}
+
+struct Pets {
+    let photoTop: String
+    let photoBottom: String
+    let petsInfo: String
+    
+    static func getPets() -> Pets{
+        Pets(photoTop: "blackCat", photoBottom: "redCat", petsInfo: "pets")
+    }
+    
+}
+
+
+
 
 
