@@ -18,8 +18,8 @@ class PetsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        topPhoto = UIImageView.init(image: UIImage(named: "blackCat"))
-        bottomPhoto = UIImageView.init(image: UIImage(named: "redCat"))
+        topPhoto.image = UIImage(named: pets.photoTop)
+        bottomPhoto.image = UIImage(named: pets.photoBottom)
         petsText = pets.petsInfo
         
     }

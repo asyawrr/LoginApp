@@ -35,7 +35,8 @@ struct Person {
             surname: "Шерстнюк",
             profession: "junior iOS разработчик",
             course: "2 блок swiftbook",
-            personPhoto: "person")
+            personPhoto: "person"
+        )
     }
 }
 
@@ -44,7 +45,7 @@ struct Hobby {
     let hobbyText: String
     
     static func getHobby() -> Hobby {
-        Hobby(photo: "hobby", hobbyText: "hobby")
+        Hobby(photo: "hobby", hobbyText: "Лучший отдых с друзьями - настольные игры")
     }
 }
 
@@ -53,8 +54,12 @@ struct Pets {
     let photoBottom: String
     let petsInfo: String
     
-    static func getPets() -> Pets{
-        Pets(photoTop: "blackCat", photoBottom: "redCat", petsInfo: "pets")
+    static func getPets() -> Pets {
+        Pets(
+            photoTop: "blackCat",
+            photoBottom: "redCat",
+            petsInfo: "У меня есть котики, и они клевые!"
+        )
     }
     
 }

@@ -17,7 +17,7 @@
 		927C232B29103CA800D7B45B /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C232A29103CA800D7B45B /* PetsViewController.swift */; };
 		927C232D29103CD800D7B45B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C232C29103CD800D7B45B /* TabBarController.swift */; };
 		927C232F29103CEC00D7B45B /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C232E29103CEC00D7B45B /* InformationViewController.swift */; };
-		927C233129104B8D00D7B45B /* UINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C233029104B8D00D7B45B /* UINavigationViewController.swift */; };
+		927C23332910892700D7B45B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C23322910892700D7B45B /* NavigationViewController.swift */; };
 		92FA5035290D79CC00E0A3C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FA5034290D79CC00E0A3C8 /* LoginViewController.swift */; };
 		92FA503B290F2E5100E0A3C8 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FA503A290F2E5100E0A3C8 /* UserInformation.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		927C232A29103CA800D7B45B /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
 		927C232C29103CD800D7B45B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		927C232E29103CEC00D7B45B /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
-		927C233029104B8D00D7B45B /* UINavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationViewController.swift; sourceTree = "<group>"; };
+		927C23322910892700D7B45B /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		92FA5034290D79CC00E0A3C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92FA503A290F2E5100E0A3C8 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 				927C232E29103CEC00D7B45B /* InformationViewController.swift */,
 				927C232829103C9A00D7B45B /* HobbyViewController.swift */,
 				927C232A29103CA800D7B45B /* PetsViewController.swift */,
-				927C233029104B8D00D7B45B /* UINavigationViewController.swift */,
+				927C23322910892700D7B45B /* NavigationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 				927C232929103C9A00D7B45B /* HobbyViewController.swift in Sources */,
 				926BB716290D6982009511AD /* AppDelegate.swift in Sources */,
 				926BB718290D6982009511AD /* SceneDelegate.swift in Sources */,
-				927C233129104B8D00D7B45B /* UINavigationViewController.swift in Sources */,
+				927C23332910892700D7B45B /* NavigationViewController.swift in Sources */,
 				927C232B29103CA800D7B45B /* PetsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

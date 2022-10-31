@@ -12,20 +12,21 @@ final class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var usernameTF: UITextField!
     
-    private let user = User.getInformation()
+    private var user = User.getInformation()
     
     // MARK: override functions
     
+        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
         
-        for viewController in viewControllers {
-            if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.welcomeLabel.text = "Welcome, \(user.userName)"
-            } else if let navigationVC = viewController as? UINavigationController {
-                guard let informationVC = navigationVC.topViewController as? InformationViewController else {return}
+        viewControllers.forEach {
+            if let welcomeVC = $0 as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = $0 as? NavigationViewController {
+                guard let informationVC = navigationVC.topViewController as? InformationViewController else { return }
                 informationVC.user = user
             }
         }
@@ -40,13 +41,13 @@ final class LoginViewController: UIViewController {
     // MARK: IB Actions
     @IBAction func forgotButtonPressed(_ sender: UIButton) {
         sender.tag == 0 ?
-        showAlert(with: "Ooops!", and: "Your password is \(user.password)") :
-        showAlert(with: "Ooops!", and: "Your name is \(user.userName)")
+        showAlert(with: "Ooops!", and: "Your password is \(user.password)", for: passwordTF) :
+        showAlert(with: "Ooops!", and: "Your name is \(user.userName)", for: usernameTF)
     }
     
     
     @IBAction func logInButtonPressed() {
-        guard usernameTF.text == user.userName, passwordTF.text == user.userName else {
+        guard usernameTF.text == user.userName, passwordTF.text == user.password else {
             showAlert(with: "Invalid login or password",
                       and: "Please, enter correct login or password",
                       for: passwordTF)
@@ -56,7 +57,6 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
-        guard segue.source is WelcomeViewController else { return }
         usernameTF.text = ""
         passwordTF.text = ""
     }
