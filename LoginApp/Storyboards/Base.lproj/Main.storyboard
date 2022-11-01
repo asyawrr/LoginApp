@@ -349,7 +349,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="8xY-mE-5e4">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="QPT-TR-qyv" customClass="TabBarController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="QPT-TR-qyv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Psm-FM-z7d"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="myy-Sn-j57">
@@ -371,7 +371,7 @@
         <!--Information-->
         <scene sceneID="FEZ-nR-6cf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qfm-HB-pxa" customClass="NavigationViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qfm-HB-pxa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Information" image="person.fill" catalog="system" id="Hrj-KV-p77"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8DN-dY-YRT">

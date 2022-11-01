@@ -21,10 +21,10 @@ class PetsViewController: UIViewController {
         topPhotoImageView.layer.cornerRadius = 10
         bottomPhotoImageView.layer.cornerRadius = 10
 
-        topPhotoImageView.image = UIImage(named: user.person.personPets.photoTop)
-        bottomPhotoImageView.image = UIImage(named: user.person.personPets.photoBottom)
+        topPhotoImageView.image = UIImage(named: user.person.pets.photoTop)
+        bottomPhotoImageView.image = UIImage(named: user.person.pets.photoBottom)
 
-        petsTextLabel.text = user.person.personPets.petsInfo
+        petsTextLabel.text = user.person.pets.info
         
     }
 

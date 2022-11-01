@@ -19,8 +19,8 @@ class HobbyViewController: UIViewController {
         
         hobbyImageView.layer.cornerRadius = 10
         
-        hobbyImageView.image = UIImage(named: user.person.personHobby.photo)
-        hobbyTextLabel.text = user.person.personHobby.hobbyText
+        hobbyImageView.image = UIImage(named: user.person.hobby.photo)
+        hobbyTextLabel.text = user.person.hobby.text
         
     }
     

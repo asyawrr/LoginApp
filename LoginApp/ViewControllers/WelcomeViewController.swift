@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController {
         
         gradientBackground()
         
-        welcomeLabel.text = "Welcome, \(user.userName)"
+        welcomeLabel.text = "Welcome, \(user.name)"
         
     }
     
