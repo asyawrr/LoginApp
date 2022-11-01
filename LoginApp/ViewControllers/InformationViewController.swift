@@ -20,11 +20,27 @@ class InformationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        personImage = UIImageView.init(image: UIImage(named: user.person.personPhoto))
-        name.text = user.person.name
-        surname.text = user.person.surname
-        profession.text = user.person.profession
-        studyCourse.text = user.person.course
+        personImage.layer.cornerRadius = 15
+        personImage.image = UIImage(named: user.person.personPhoto)
+        name.text = "Имя: " + user.person.name
+        surname.text = "Фамилия: " + user.person.surname
+        profession.text = "Профессия: " + user.person.profession
+        studyCourse.text = "Курс обучения: " + user.person.course
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let hobbyVC = segue.destination as? HobbyViewController {
+//            hobbyVC.user = user
+//        } else if let petsVC = segue.destination as? PetsViewController {
+//            petsVC.user = user
+//        } else {
+//            return
+//        }
+        guard let hobbyVC = segue.destination as? HobbyViewController else { return }
+        guard let petsVC = segue.destination as? PetsViewController else { return }
+        hobbyVC.user = user
+        petsVC.user = user
         
     }
 }

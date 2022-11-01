@@ -18,8 +18,12 @@ class PetsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        topPhoto.layer.cornerRadius = 10
+        bottomPhoto.layer.cornerRadius = 10
+        
         topPhoto.image = UIImage(named: user.person.personPets.photoTop)
         bottomPhoto.image = UIImage(named: user.person.personPets.photoBottom)
+        
         petsText = user.person.personPets.petsInfo
         
     }

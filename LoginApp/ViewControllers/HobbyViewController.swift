@@ -17,6 +17,7 @@ class HobbyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hobbyImage.layer.cornerRadius = 10
         hobbyImage.image = UIImage(named: user.person.personHobby.photo)
         hobbyText = user.person.personHobby.hobbyText
         
