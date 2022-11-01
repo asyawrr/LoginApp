@@ -9,8 +9,6 @@ import UIKit
 
 class InformationViewController: UIViewController {
     
-//    @IBOutlet var petsButton: UIButton!
-//    @IBOutlet var hobbyButton: UIButton!
     @IBOutlet var personImage: UIImageView!
     @IBOutlet var name: UILabel!
     @IBOutlet var surname: UILabel!

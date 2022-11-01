@@ -13,14 +13,14 @@ class PetsViewController: UIViewController {
     @IBOutlet var bottomPhoto: UIImageView!
     @IBOutlet var petsText: String!
     
-    private let pets = Pets.getPets()
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        topPhoto.image = UIImage(named: pets.photoTop)
-        bottomPhoto.image = UIImage(named: pets.photoBottom)
-        petsText = pets.petsInfo
+        topPhoto.image = UIImage(named: user.person.personPets.photoTop)
+        bottomPhoto.image = UIImage(named: user.person.personPets.photoBottom)
+        petsText = user.person.personPets.petsInfo
         
     }
 

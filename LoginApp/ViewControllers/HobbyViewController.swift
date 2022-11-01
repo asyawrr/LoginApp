@@ -12,13 +12,13 @@ class HobbyViewController: UIViewController {
     @IBOutlet var hobbyImage: UIImageView!
     @IBOutlet var hobbyText: String!
     
-    private let hobby = Hobby.getHobby()
-    
+    var user: User!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hobbyImage = UIImageView.init(image: UIImage(named: "hobby"))
-        hobbyText = hobby.hobbyText
+        hobbyImage.image = UIImage(named: user.person.personHobby.photo)
+        hobbyText = user.person.personHobby.hobbyText
         
     }
 

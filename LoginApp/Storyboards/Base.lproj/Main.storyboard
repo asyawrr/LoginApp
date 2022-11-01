@@ -245,6 +245,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w76-HH-Et1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="openInfoVC"/>
                         <constraints>
                             <constraint firstItem="w76-HH-Et1" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Eed-XN-oJ8" secondAttribute="bottom" constant="20" id="0Em-rz-ThP"/>
                             <constraint firstItem="jbR-Dc-aBr" firstAttribute="width" secondItem="IHG-ze-YH0" secondAttribute="width" multiplier="0.440625" id="1a6-Od-ME8"/>
@@ -383,7 +384,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="8vG-Nj-IDh" kind="relationship" relationship="viewControllers" id="nG4-V2-noC"/>
-                        <segue destination="qfm-HB-pxa" kind="relationship" relationship="viewControllers" id="5C3-gG-rwD"/>
+                        <segue destination="qfm-HB-pxa" kind="relationship" relationship="viewControllers" id="1hC-gP-oIS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Q3-hO-iPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

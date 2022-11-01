@@ -28,6 +28,8 @@ struct Person {
     let profession: String
     let course: String
     let personPhoto: String
+    let personPets: Pets
+    let personHobby: Hobby
     
     static func getPerson() -> Person {
         Person(
@@ -35,7 +37,9 @@ struct Person {
             surname: "Шерстнюк",
             profession: "junior iOS разработчик",
             course: "2 блок swiftbook",
-            personPhoto: "person"
+            personPhoto: "person",
+            personPets: Pets.getPets(),
+            personHobby: Hobby.getHobby()
         )
     }
 }

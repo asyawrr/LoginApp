@@ -53,7 +53,7 @@ final class LoginViewController: UIViewController {
                       for: passwordTF)
             return
         }
-        performSegue(withIdentifier: "openWelcomeVC", sender: nil)
+//        performSegue(withIdentifier: "openWelcomeVC", sender: nil)
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
