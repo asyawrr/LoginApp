@@ -18,13 +18,13 @@ final class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard let tabBarController = segue.destination as? TabBarController else { return }
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
         
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.user = user
-            } else if let navigationVC = viewController as? NavigationViewController {
+            } else if let navigationVC = viewController as? UINavigationController {
                 guard let informationVC = navigationVC.topViewController as? InformationViewController else{
                     return
                 }
@@ -43,12 +43,12 @@ final class LoginViewController: UIViewController {
     @IBAction func forgotButtonPressed(_ sender: UIButton) {
         sender.tag == 0 ?
         showAlert(with: "Ooops!", and: "Your password is \(user.password)", for: passwordTF) :
-        showAlert(with: "Ooops!", and: "Your name is \(user.userName)", for: usernameTF)
+        showAlert(with: "Ooops!", and: "Your name is \(user.name)", for: usernameTF)
     }
     
     
     @IBAction func logInButtonPressed() {
-        guard usernameTF.text == user.userName, passwordTF.text == user.password else {
+        guard usernameTF.text == user.name, passwordTF.text == user.password else {
             showAlert(with: "Invalid login or password",
                       and: "Please, enter correct login or password",
                       for: passwordTF)
