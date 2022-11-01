@@ -21,6 +21,7 @@ class InformationViewController: UIViewController {
         super.viewDidLoad()
         
         personImageView.layer.cornerRadius = 15
+        
         personImageView.image = UIImage(named: user.person.personPhoto)
         nameLabel.text = "Имя: " + user.person.name
         surnameLabel.text = "Фамилия: " + user.person.surname
@@ -30,9 +31,26 @@ class InformationViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let petsVC = segue.destination as? PetsViewController else { return }
-        petsVC.user = user
+        if segue.identifier == "openPetsVC" {
+            guard let petsVC = segue.destination as? PetsViewController else { return }
+            petsVC.user = user
+
+        }
+        
+        if segue.identifier == "openHobbyVC" {
+            guard let hobbyVC = segue.destination as? HobbyViewController else { return }
+            hobbyVC.user = user
+
+        }
     }
+//    
+//    @IBAction func petsButtonPressed() {
+//        performSegue(withIdentifier: "openPetsVC", sender: nil)
+//    }
+//
+//    @IBAction func hobbyButtonPressed() {
+//        performSegue(withIdentifier: "openHobbyVC", sender: nil)
+//    }
     
     
 }
