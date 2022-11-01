@@ -13,7 +13,6 @@
 		926BB71F290D6983009511AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926BB71E290D6983009511AD /* Assets.xcassets */; };
 		926BB722290D6983009511AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926BB720290D6983009511AD /* LaunchScreen.storyboard */; };
 		926BB72A290D6EDC009511AD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926BB729290D6EDC009511AD /* WelcomeViewController.swift */; };
-		927C232929103C9A00D7B45B /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C232829103C9A00D7B45B /* HobbyViewController.swift */; };
 		927C232B29103CA800D7B45B /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C232A29103CA800D7B45B /* PetsViewController.swift */; };
 		927C232D29103CD800D7B45B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C232C29103CD800D7B45B /* TabBarController.swift */; };
 		927C232F29103CEC00D7B45B /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C232E29103CEC00D7B45B /* InformationViewController.swift */; };
@@ -31,7 +30,6 @@
 		926BB721290D6983009511AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		926BB723290D6983009511AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		926BB729290D6EDC009511AD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		927C232829103C9A00D7B45B /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		927C232A29103CA800D7B45B /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
 		927C232C29103CD800D7B45B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		927C232E29103CEC00D7B45B /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				927C232C29103CD800D7B45B /* TabBarController.swift */,
 				926BB729290D6EDC009511AD /* WelcomeViewController.swift */,
 				927C232E29103CEC00D7B45B /* InformationViewController.swift */,
-				927C232829103C9A00D7B45B /* HobbyViewController.swift */,
 				927C232A29103CA800D7B45B /* PetsViewController.swift */,
 				92EE70552911045000C8E190 /* NavigationViewController.swift */,
 			);
@@ -196,7 +193,6 @@
 				92FA5035290D79CC00E0A3C8 /* LoginViewController.swift in Sources */,
 				927C232F29103CEC00D7B45B /* InformationViewController.swift in Sources */,
 				926BB72A290D6EDC009511AD /* WelcomeViewController.swift in Sources */,
-				927C232929103C9A00D7B45B /* HobbyViewController.swift in Sources */,
 				926BB716290D6982009511AD /* AppDelegate.swift in Sources */,
 				926BB718290D6982009511AD /* SceneDelegate.swift in Sources */,
 				92EE70562911045000C8E190 /* NavigationViewController.swift in Sources */,

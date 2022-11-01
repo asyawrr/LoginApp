@@ -150,55 +150,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Eed-XN-oJ8">
-                                <rect key="frame" x="12" y="463" width="296" height="36"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5f-Uf-w9h">
-                                        <rect key="frame" x="0.0" y="0.0" width="98" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Животные"/>
-                                        <connections>
-                                            <segue destination="3DP-Jv-8yf" kind="show" id="JtN-24-ocn"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc4-6W-EX6">
-                                        <rect key="frame" x="198" y="0.0" width="98" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Хобби"/>
-                                        <connections>
-                                            <segue destination="HxC-fE-Ssb" kind="show" id="uh3-FI-ADP"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dxx-p2-H3y">
-                                <rect key="frame" x="40" y="261.5" width="240" height="141.5"/>
+                                <rect key="frame" x="40" y="281.5" width="240" height="172"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DLE-iU-GeQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="141.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="172"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fsj-Xu-C28">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="13"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xTN-tI-asI">
-                                                <rect key="frame" x="0.0" y="43" width="240" height="12.5"/>
+                                                <rect key="frame" x="0.0" y="50.5" width="240" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Rgi-Hj-rvP">
-                                                <rect key="frame" x="0.0" y="85.5" width="240" height="13"/>
+                                                <rect key="frame" x="0.0" y="101" width="240" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4ZZ-WW-2jF">
-                                                <rect key="frame" x="0.0" y="128.5" width="240" height="13"/>
+                                                <rect key="frame" x="0.0" y="151.5" width="240" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -218,20 +195,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration" identifier="openInfoVC"/>
                         <constraints>
-                            <constraint firstItem="w76-HH-Et1" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Eed-XN-oJ8" secondAttribute="bottom" constant="20" id="0Em-rz-ThP"/>
-                            <constraint firstItem="Eed-XN-oJ8" firstAttribute="centerX" secondItem="w76-HH-Et1" secondAttribute="centerX" id="6fu-kt-Lu0"/>
-                            <constraint firstItem="dxx-p2-H3y" firstAttribute="top" secondItem="VON-CF-52C" secondAttribute="bottom" constant="20" id="AB7-J6-uC3"/>
-                            <constraint firstItem="w76-HH-Et1" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Eed-XN-oJ8" secondAttribute="trailing" constant="40" id="I9F-Ng-AGK"/>
+                            <constraint firstItem="dxx-p2-H3y" firstAttribute="top" secondItem="VON-CF-52C" secondAttribute="bottom" constant="40" id="AB7-J6-uC3"/>
                             <constraint firstItem="VON-CF-52C" firstAttribute="width" secondItem="IHG-ze-YH0" secondAttribute="width" multiplier="0.465116" id="TFk-w1-e7c"/>
                             <constraint firstItem="w76-HH-Et1" firstAttribute="trailing" secondItem="dxx-p2-H3y" secondAttribute="trailing" constant="40" id="bPK-uz-NDO"/>
                             <constraint firstItem="VON-CF-52C" firstAttribute="top" secondItem="w76-HH-Et1" secondAttribute="top" id="eAT-fU-a85"/>
                             <constraint firstItem="VON-CF-52C" firstAttribute="centerX" secondItem="w76-HH-Et1" secondAttribute="centerX" id="gWw-hO-st9"/>
                             <constraint firstItem="dxx-p2-H3y" firstAttribute="leading" secondItem="w76-HH-Et1" secondAttribute="leading" constant="40" id="i8F-KO-WDi"/>
-                            <constraint firstItem="Eed-XN-oJ8" firstAttribute="top" secondItem="dxx-p2-H3y" secondAttribute="bottom" constant="60" id="qeR-9K-dNc"/>
-                            <constraint firstItem="Eed-XN-oJ8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="w76-HH-Et1" secondAttribute="leading" constant="40" id="sEo-hP-KwM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Information" id="yCh-gn-IRw"/>
+                    <navigationItem key="navigationItem" title="Information" id="QOQ-WQ-BN5">
+                        <barButtonItem key="rightBarButtonItem" title="More" id="kPt-Th-oFL">
+                            <connections>
+                                <segue destination="3DP-Jv-8yf" kind="show" id="4pi-oP-vlv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="name" destination="fsj-Xu-C28" id="9pc-2T-ODS"/>
                         <outlet property="personImage" destination="VON-CF-52C" id="mkK-Yo-1wv"/>
@@ -244,25 +222,25 @@
             </objects>
             <point key="canvasLocation" x="3236" y="793"/>
         </scene>
-        <!--Животные-->
+        <!--Pets-->
         <scene sceneID="Mjb-sc-yaS">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="3DP-Jv-8yf" customClass="PetsViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="3DP-Jv-8yf" customClass="PetsViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zvZ-Cf-2bf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Doe-hq-qHg">
-                                <rect key="frame" x="50" y="92.5" width="220" height="370"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Doe-hq-qHg">
+                                <rect key="frame" x="60" y="92.5" width="200" height="320"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZRG-0r-TeW">
-                                        <rect key="frame" x="0.0" y="0.0" width="220" height="165"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ZRG-0r-TeW" secondAttribute="height" multiplier="4:3" id="JAK-0s-Z9X"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RP8-VI-KvH">
-                                        <rect key="frame" x="0.0" y="205" width="220" height="165"/>
+                                        <rect key="frame" x="0.0" y="170" width="200" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="RP8-VI-KvH" secondAttribute="height" multiplier="4:3" id="vXW-wv-teh"/>
                                         </constraints>
@@ -270,7 +248,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tf1-N9-bKc">
-                                <rect key="frame" x="40" y="482.5" width="240" height="20.5"/>
+                                <rect key="frame" x="40" y="432.5" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -282,64 +260,24 @@
                             <constraint firstItem="tf1-N9-bKc" firstAttribute="top" secondItem="RP8-VI-KvH" secondAttribute="bottom" constant="20" id="21u-60-OXI"/>
                             <constraint firstItem="Doe-hq-qHg" firstAttribute="top" secondItem="8bk-zN-5wG" secondAttribute="top" id="DTg-Sc-EOZ"/>
                             <constraint firstItem="8bk-zN-5wG" firstAttribute="trailing" secondItem="tf1-N9-bKc" secondAttribute="trailing" constant="40" id="F0m-pI-ExS"/>
-                            <constraint firstItem="Doe-hq-qHg" firstAttribute="leading" secondItem="8bk-zN-5wG" secondAttribute="leading" constant="50" id="KlL-QV-dl2"/>
-                            <constraint firstItem="8bk-zN-5wG" firstAttribute="trailing" secondItem="Doe-hq-qHg" secondAttribute="trailing" constant="50" id="YpO-Cs-KUv"/>
+                            <constraint firstItem="Doe-hq-qHg" firstAttribute="leading" secondItem="8bk-zN-5wG" secondAttribute="leading" constant="60" id="KlL-QV-dl2"/>
+                            <constraint firstItem="8bk-zN-5wG" firstAttribute="trailing" secondItem="Doe-hq-qHg" secondAttribute="trailing" constant="60" id="YpO-Cs-KUv"/>
                             <constraint firstItem="tf1-N9-bKc" firstAttribute="leading" secondItem="8bk-zN-5wG" secondAttribute="leading" constant="40" id="mRc-vs-mHZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Животные" id="lvQ-Lf-Hjh">
+                    <tabBarItem key="tabBarItem" title="Pets" image="suit.heart.fill" catalog="system" id="dXe-C0-aJ5"/>
+                    <navigationItem key="navigationItem" title="Pets" id="lvQ-Lf-Hjh">
                         <barButtonItem key="backBarButtonItem" title="Information" id="Flj-W4-kmQ"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="bottomPhoto" destination="RP8-VI-KvH" id="fgW-Rq-OkV"/>
-                        <outlet property="petsText" destination="tf1-N9-bKc" id="ii1-mO-OLh"/>
-                        <outlet property="topPhoto" destination="ZRG-0r-TeW" id="Kkq-ml-25f"/>
+                        <outlet property="bottomPhoto" destination="RP8-VI-KvH" id="Rh3-4S-iis"/>
+                        <outlet property="petsText" destination="tf1-N9-bKc" id="k57-kr-HfB"/>
+                        <outlet property="topPhoto" destination="ZRG-0r-TeW" id="huF-xO-Fyv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07d-UM-ptB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2910" y="1593"/>
-        </scene>
-        <!--Хобби-->
-        <scene sceneID="psB-o1-eQO">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="HxC-fE-Ssb" customClass="HobbyViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GoK-yB-4iI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouu-QK-aWE">
-                                <rect key="frame" x="139" y="396" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GnB-i7-YTQ">
-                                <rect key="frame" x="37.5" y="92.5" width="245" height="245.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="GnB-i7-YTQ" secondAttribute="height" multiplier="1:1" id="DG3-Og-k8e"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="BN8-IG-H4A"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="GnB-i7-YTQ" firstAttribute="width" secondItem="GoK-yB-4iI" secondAttribute="width" multiplier="0.766667" id="LYF-oa-8hU"/>
-                            <constraint firstItem="ouu-QK-aWE" firstAttribute="centerX" secondItem="GoK-yB-4iI" secondAttribute="centerX" id="NQy-QZ-CMc"/>
-                            <constraint firstItem="ouu-QK-aWE" firstAttribute="top" secondItem="GnB-i7-YTQ" secondAttribute="bottom" constant="58" id="aOa-Xa-1Jy"/>
-                            <constraint firstItem="GnB-i7-YTQ" firstAttribute="top" secondItem="BN8-IG-H4A" secondAttribute="top" id="gxc-vU-vJP"/>
-                            <constraint firstItem="GnB-i7-YTQ" firstAttribute="centerX" secondItem="BN8-IG-H4A" secondAttribute="centerX" id="uXG-Ip-L0G"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Хобби" id="xV4-O8-8d6"/>
-                    <connections>
-                        <outlet property="hobbyImage" destination="GnB-i7-YTQ" id="I5w-ZK-bkp"/>
-                        <outlet property="hobbyText" destination="ouu-QK-aWE" id="VuX-wq-obc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YgC-QX-ROd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3609" y="1593"/>
+            <point key="canvasLocation" x="4029" y="792"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8xY-mE-5e4">
@@ -370,7 +308,7 @@
                     <tabBarItem key="tabBarItem" title="Information" image="person.fill" catalog="system" id="Hrj-KV-p77"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8DN-dY-YRT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -386,6 +324,7 @@
     <resources>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="suit.heart.fill" catalog="system" width="128" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

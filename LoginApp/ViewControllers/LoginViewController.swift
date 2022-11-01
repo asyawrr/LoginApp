@@ -16,17 +16,18 @@ final class LoginViewController: UIViewController {
     
     // MARK: override functions
     
-        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let tabBarController = segue.destination as? TabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
         
-        viewControllers.forEach {
-            if let welcomeVC = $0 as? WelcomeViewController {
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.user = user
-            } else if let navigationVC = $0 as? NavigationViewController {
-                guard let informationVC = navigationVC.topViewController as? InformationViewController else { return }
+            } else if let navigationVC = viewController as? NavigationViewController {
+                guard let informationVC = navigationVC.topViewController as? InformationViewController else{
+                    return
+                }
                 informationVC.user = user
             }
         }
@@ -53,7 +54,6 @@ final class LoginViewController: UIViewController {
                       for: passwordTF)
             return
         }
-//        performSegue(withIdentifier: "openWelcomeVC", sender: nil)
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {

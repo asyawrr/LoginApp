@@ -30,17 +30,10 @@ class InformationViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let hobbyVC = segue.destination as? HobbyViewController {
-//            hobbyVC.user = user
-//        } else if let petsVC = segue.destination as? PetsViewController {
-//            petsVC.user = user
-//        } else {
-//            return
-//        }
-        guard let hobbyVC = segue.destination as? HobbyViewController else { return }
         guard let petsVC = segue.destination as? PetsViewController else { return }
-        hobbyVC.user = user
-        petsVC.user = user
         
+        petsVC.user = user
     }
+    
+    
 }
