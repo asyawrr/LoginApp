@@ -8,13 +8,13 @@
 import Foundation
 
 struct User {
-    let userName: String
+    let name: String
     let password: String
     let person: Person
     
     static func getInformation() -> User {
         User(
-            userName: "User",
+            name: "User",
             password: "Password",
             person: Person.getPerson()
         )
@@ -27,9 +27,9 @@ struct Person {
     let surname: String
     let profession: String
     let course: String
-    let personPhoto: String
-    let personPets: Pets
-    let personHobby: Hobby
+    let photo: String
+    let pets: Pets
+    let hobby: Hobby
     
     static func getPerson() -> Person {
         Person(
@@ -37,9 +37,9 @@ struct Person {
             surname: "Шерстнюк",
             profession: "junior iOS разработчик",
             course: "2 блок swiftbook",
-            personPhoto: "person",
-            personPets: Pets.getPets(),
-            personHobby: Hobby.getHobby()
+            photo: "person",
+            pets: Pets.getPets(),
+            hobby: Hobby.getHobby()
         )
     }
 }
@@ -47,25 +47,25 @@ struct Person {
 struct Pets {
     let photoTop: String
     let photoBottom: String
-    let petsInfo: String
+    let info: String
     
     static func getPets() -> Pets {
         Pets(
             photoTop: "blackCat",
             photoBottom: "redCat",
-            petsInfo: "У меня есть котики, и они клевые!"
+            info: "У меня есть котики, и они клевые!"
         )
     }
 }
 
 struct Hobby {
     let photo: String
-    let hobbyText: String
+    let text: String
     
     static func getHobby() -> Hobby {
         Hobby(
             photo: "hobby",
-            hobbyText: "Играем вот с друзьями в свободное от работы время в настолки.\n Самое сложное: найти чтобы это свободное время совпало у всех :)"
+            text: "Играем вот с друзьями в свободное от работы время в настолки.\n Самое сложное: найти чтобы это свободное время совпало у всех :)"
         )
     }
 }
