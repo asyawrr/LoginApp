@@ -9,29 +9,28 @@ import UIKit
 
 class InformationViewController: UIViewController {
     
-    @IBOutlet var personImage: UIImageView!
-    @IBOutlet var name: UILabel!
-    @IBOutlet var surname: UILabel!
-    @IBOutlet var profession: UILabel!
-    @IBOutlet var studyCourse: UILabel!
+    @IBOutlet var personImageView: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var professionLabel: UILabel!
+    @IBOutlet var studyCourseLabel: UILabel!
     
     var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        personImage.layer.cornerRadius = 15
-        personImage.image = UIImage(named: user.person.personPhoto)
-        name.text = "Имя: " + user.person.name
-        surname.text = "Фамилия: " + user.person.surname
-        profession.text = "Профессия: " + user.person.profession
-        studyCourse.text = "Курс обучения: " + user.person.course
+        personImageView.layer.cornerRadius = 15
+        personImageView.image = UIImage(named: user.person.personPhoto)
+        nameLabel.text = "Имя: " + user.person.name
+        surnameLabel.text = "Фамилия: " + user.person.surname
+        professionLabel.text = "Профессия: " + user.person.profession
+        studyCourseLabel.text = "Курс обучения: " + user.person.course
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let petsVC = segue.destination as? PetsViewController else { return }
-        
         petsVC.user = user
     }
     

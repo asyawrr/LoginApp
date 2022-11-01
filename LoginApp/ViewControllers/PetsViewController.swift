@@ -9,22 +9,22 @@ import UIKit
 
 class PetsViewController: UIViewController {
     
-    @IBOutlet var topPhoto: UIImageView!
-    @IBOutlet var bottomPhoto: UIImageView!
-    @IBOutlet var petsText: String!
+    @IBOutlet var topPhotoImageView: UIImageView!
+    @IBOutlet var bottomPhotoImageView: UIImageView!
+    @IBOutlet var petsTextLabel: UILabel!
     
     var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        topPhoto.layer.cornerRadius = 10
-        bottomPhoto.layer.cornerRadius = 10
-        
-        topPhoto.image = UIImage(named: user.person.personPets.photoTop)
-        bottomPhoto.image = UIImage(named: user.person.personPets.photoBottom)
-        
-        petsText = user.person.personPets.petsInfo
+
+        topPhotoImageView.layer.cornerRadius = 10
+        bottomPhotoImageView.layer.cornerRadius = 10
+
+        topPhotoImageView.image = UIImage(named: user.person.personPets.photoTop)
+        bottomPhotoImageView.image = UIImage(named: user.person.personPets.photoBottom)
+
+        petsTextLabel.text = user.person.personPets.petsInfo
         
     }
 

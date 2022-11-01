@@ -206,16 +206,16 @@
                     <navigationItem key="navigationItem" title="Information" id="QOQ-WQ-BN5">
                         <barButtonItem key="rightBarButtonItem" title="More" id="kPt-Th-oFL">
                             <connections>
-                                <segue destination="3DP-Jv-8yf" kind="show" id="4pi-oP-vlv"/>
+                                <segue destination="3DP-Jv-8yf" kind="show" id="I3i-ko-34a"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="name" destination="fsj-Xu-C28" id="9pc-2T-ODS"/>
-                        <outlet property="personImage" destination="VON-CF-52C" id="mkK-Yo-1wv"/>
-                        <outlet property="profession" destination="Rgi-Hj-rvP" id="P8f-xh-DJ0"/>
-                        <outlet property="studyCourse" destination="4ZZ-WW-2jF" id="pup-fT-tKq"/>
-                        <outlet property="surname" destination="xTN-tI-asI" id="9Ru-28-v3T"/>
+                        <outlet property="nameLabel" destination="fsj-Xu-C28" id="ryO-7f-Frb"/>
+                        <outlet property="personImageView" destination="VON-CF-52C" id="EIB-qk-P2b"/>
+                        <outlet property="professionLabel" destination="Rgi-Hj-rvP" id="sTi-cl-qSe"/>
+                        <outlet property="studyCourseLabel" destination="4ZZ-WW-2jF" id="xh2-vX-7qX"/>
+                        <outlet property="surnameLabel" destination="xTN-tI-asI" id="kws-Gd-JqK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2LQ-kz-GFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,14 +270,14 @@
                         <barButtonItem key="backBarButtonItem" title="Information" id="Flj-W4-kmQ"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="bottomPhoto" destination="RP8-VI-KvH" id="Rh3-4S-iis"/>
-                        <outlet property="petsText" destination="tf1-N9-bKc" id="k57-kr-HfB"/>
-                        <outlet property="topPhoto" destination="ZRG-0r-TeW" id="huF-xO-Fyv"/>
+                        <outlet property="bottomPhotoImageView" destination="RP8-VI-KvH" id="uVs-8W-t9o"/>
+                        <outlet property="petsTextLabel" destination="tf1-N9-bKc" id="kqc-9v-NQW"/>
+                        <outlet property="topPhotoImageView" destination="ZRG-0r-TeW" id="dhn-AA-QJz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07d-UM-ptB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4029" y="792"/>
+            <point key="canvasLocation" x="4020" y="792"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8xY-mE-5e4">
